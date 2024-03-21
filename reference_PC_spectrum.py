@@ -2,7 +2,6 @@ from math import *
 import numpy as np
 from numba import njit
 
-
 @njit
 def PC_curve(E1,C,F_g,F_l,KE_start,KE_stop,a2):
     m=(F_g/(F_g+F_l))
