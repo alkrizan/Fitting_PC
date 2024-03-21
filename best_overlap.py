@@ -32,7 +32,7 @@ def best_overlap(new_fit,D2,a,step_x,E_1,a2):
         print('not enough iterations')
 
     x_PC, y_PC=fitted_params
-    chi_final=chi(fitted_params)
+    chi_final=optimize(fitted_params)
 
     new_fit[:, 1] = np.roll(new_fit[:, 1], round(x_PC), 0)
     NEW = np.zeros((a, 4))
