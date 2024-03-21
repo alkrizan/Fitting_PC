@@ -353,9 +353,9 @@ for i in range(len(file_list)):
             plt.xlabel(r'Kinetic Energy [eV]', fontsize=13)
             plt.ylabel(r'Cps [s$^{-1}$]', fontsize=13)
 
-            ax.plot(D2[:, 0], D2[:, 1],linewidth=0,linestyle='-',label='experimental',marker='o',markersize=1.5,color=colors[4])
+            ax.plot(D2[:, 0], D2[:, 1],linewidth=0,linestyle='-',label='experimental',marker='o',markersize=2.5,color=colors[4])
             ax.plot(newfit2[:, 0], newfit2[:, 1],linewidth=1.5,linestyle='-',label='best fit',color=colors[1])
-            ax.plot(resid[:, 0], resid[:, 1],linewidth=0.4,linestyle='-', label='residuals',color=colors[3])
+            ax.plot(resid[:, 0], resid[:, 1],linewidth=0,linestyle='-',marker='o',markersize=1.5,label='residuals',color='k')
             ax.plot(res_level[:, 0], res_level[:, 1],linewidth=1,linestyle='--',label='residual baseline',color=colors[7])
 
             #vertical grey line to indicate where was the initial guess for C-O
