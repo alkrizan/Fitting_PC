@@ -1,5 +1,5 @@
 import numpy as np
-from scipy.optimize import minimize
+from scipy.optimize import minimize 
 
 def best_overlap(new_fit,D2,a,step_x,E_1,a2):
 
