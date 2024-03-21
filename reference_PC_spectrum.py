@@ -45,8 +45,6 @@ def PC_curve(E1,C,F_g,F_l,KE_start,KE_stop,a2):
         curve_2[j] = I_x
         j += 1
 
-
-
     #C=O peak
     curve_3 = np.zeros((a2, 1))  # curve for peak C-O
     j = 0
