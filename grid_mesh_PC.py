@@ -1,7 +1,6 @@
 import numpy as np
 
 def grid_mesh(D2,peaks_2,C,a,a2):
-
 #nr_steps determines the grid mesh resolution
     Nr_steps_x=80 #this could probably be less
     Nr_steps_y=30
