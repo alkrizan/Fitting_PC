@@ -10,6 +10,8 @@ Each PC spectrum is fitted according to the following steps:
 3. grid-mesh method is used to adjust the reference spectrum position and improve the overlap between the reference spectrum and the experimental spectrum
 4. steepest descent algorithm using Nelder-Mead sampling is used to improve the match between the reference and the experimental spectrum from point (3)
 
+To run the code, download the main code and the three functions into the same folder. 
+
 An example of a raw spectrum and the corresponding fit obtained with this code is shown below. The input required for running the code is an array with dimensions (N+1)*M. The first column contains the kinetic energy of each data point. Columns from 2 to N+1 contain the PC spectra which we would like to fit (e.g. consecutively recorded PC spectra). M is the number of data points (detector channels) of the PC spectra. Two examples of the input files are provided in the repository. The script fits each of the N PC spectra, saves a plot of each fit in the chosen directory and after fitting all N spectra, a plot of the C=O position (kinetic energy) against the number of the spectrum column (between 2 and N+1) is plotted and saved in a text file. 
 
 ![rect8517](https://github.com/alkrizan/Fitting_PC/assets/164196118/da37a5e0-89fb-4a6e-90c4-e66692277e9e)
